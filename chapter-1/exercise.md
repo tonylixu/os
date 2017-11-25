@@ -32,3 +32,11 @@ The three main purpose of an OS are:
 ### Some CPUs provide for more than two modes of operation. What are two possible uses of these multiple modes?
 * Provide an enhanced security policy. If distinguish between user and kernel mode are not enough. For example, you could distinguish between different types of user mode, lock down the security permission at user group level.
 * Provide different distinctions within kernel code. For example, a specific mode could allow USB device drivers to run, this could mean that USB device can be served without switch into kernel mode.
+
+### Timers could be used to compute the current time. Provide a short description of how this could be accomplished.
+* So the purpose of timer is to ensure that the OS maintains contorl over the CPU, we can't allow a user program to get stuck in an infinite loop or never return the control to OS after system call. Timer can be set to interrupt the compter after a specified period. The period may be fixed (for example, 1/60 second) or variable (for example, from 1 millisecond to 1 second). A variable timer is generally implemented by a fixed-rate clock and counter, and the counter is controlled by the OS. Every time the clock ticks, the counter is decremented. When counter reaches 0, an interrupt occurs and the control transfers back to OS.
+
+### Give two reasons why caches are useful. What problems do they solve? What problems do they cause? If a cache can be made as large as the device for which it is caching (for instance, a cache as large as a disk), why not make it that large and eliminate the device?
+* Caches are useful when transferring data between two or more different types of devices (Disk to main memory for example) with different transfer speed. Cache provides a buffer between the components. Faster component can read of cache instead of waiting for the slower component. A component may be eliminated by an equal-sized cache, but only if:
+  * The cache and the component have equivalent state-saving capacity
+  * The cache is affordable 
