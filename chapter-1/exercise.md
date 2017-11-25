@@ -9,3 +9,7 @@ The three main purpose of an OS are:
 
 ### What is the main difficulty that a programmer must overcome in writingan operating system for a real-time environment?
 * The task scheuduling. If a task doesn't complete in a certain time frame, it will cause a breakdown of the entire system. A programmer must make sure the response time doesn't exceed the time constraint.
+
+### Keeping in mind the various definitions of operating system, consider whether the operating system should include applications such as web browsers and mail programs. Argue both that it should and that it should not, and support your answers.
+* I think the OS should not embedd applications like web browser, mail and etc. First of all, there are applications, should stay out of kernel space. Second, include these applications could make OS more and more fat. Third, the more applications you embedded in OS, the more security risk and volunerabilities you are putting into the OS.
+
