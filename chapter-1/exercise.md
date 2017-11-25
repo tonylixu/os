@@ -39,4 +39,7 @@ The three main purpose of an OS are:
 ### Give two reasons why caches are useful. What problems do they solve? What problems do they cause? If a cache can be made as large as the device for which it is caching (for instance, a cache as large as a disk), why not make it that large and eliminate the device?
 * Caches are useful when transferring data between two or more different types of devices (Disk to main memory for example) with different transfer speed. Cache provides a buffer between the components. Faster component can read of cache instead of waiting for the slower component. A component may be eliminated by an equal-sized cache, but only if:
   * The cache and the component have equivalent state-saving capacity
-  * The cache is affordable 
+  * The cache is affordable
+
+### Distinguish between the client–server and peer-to-peer models of distributed systems.
+* The client-server model has clearly roles. Clients request and server response. If a server goes down, client won't be able to make any requests. Peer-to-peer don't have such strict roles. All nodes in the system are considered peers and may act either clients or servers.
