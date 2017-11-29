@@ -1,4 +1,5 @@
 ### What is the purpose of system calls?
+Answer: System calls provide an interface to the services made available by an operating system. These calls are generally written in low-level languages.
 
 ### What are the five major activities of an operating system with regard to process management?
 
