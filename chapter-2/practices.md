@@ -23,6 +23,7 @@ Answer:
 Answer: Command interpreter provides a way of allowing user to use services made available by OS and hardware resources. In most Unix and Windows systems, command interpreter is just a file locater, to identify a file to be loaded into memory, itself doesn't understand the command.
 
 ### What system calls have to be executed by a command interpreter or shell in order to start a new process?
+Answer: fork() followed by exec()
 
 ### What is the purpose of system programs?
 
