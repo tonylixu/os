@@ -29,7 +29,7 @@ Answer: fork() followed by exec()
 Answers: To provide a convenient environment for program development and execution.
 
 ### What is the main advantage of the layered approach to system design? What are the disadvantages of the layered approach?
-Answer: Layered approach 
+Answer: Layered approach break OS into small pieces that are smaller and more appropriate. This lets OS retain much greater control over hardware and over the applications that make use of hardware. It also gives more freedom to OS implementers, more system security. The main advantage is simplicity of contruction and debugging. The disadvantage of layered OS is since the higher layer can only invoke the data structures and routines in the lower layer, this structure is less efficient than other types.
 
 ### What's the advantage of monolithic structure?
 Answer: Compare to Mach or MicroKernel, monolithic structure can provide a distinct performance advantage, but it is difficult to implement and maintain.
