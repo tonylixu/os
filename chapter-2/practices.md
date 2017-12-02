@@ -26,6 +26,7 @@ Answer: Command interpreter provides a way of allowing user to use services made
 Answer: fork() followed by exec()
 
 ### What is the purpose of system programs?
+Answers: To provide a convenient environment for program development and execution.
 
 ### What is the main advantage of the layered approach to system design? What are the disadvantages of the layered approach?
 
