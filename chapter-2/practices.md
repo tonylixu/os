@@ -29,6 +29,10 @@ Answer: fork() followed by exec()
 Answers: To provide a convenient environment for program development and execution.
 
 ### What is the main advantage of the layered approach to system design? What are the disadvantages of the layered approach?
+Answer: Layered approach 
+
+### What's the advantage of monolithic structure?
+Answer: Compare to Mach or MicroKernel, monolithic structure can provide a distinct performance advantage, but it is difficult to implement and maintain.
 
 ### List five services provided by an operating system, and explain how each creates convenience for users. In which cases would it be impossible for user-level programs to provide these services? Explain your answer.
 
