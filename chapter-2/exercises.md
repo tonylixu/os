@@ -1,8 +1,20 @@
 ### The services and functions provided by an operating system can be divided into two main categories. Briefly describe the two categories, and discuss how they differ.
+Answer: One set of categories provides functions that are help to the user, such as:
+* User interface; program execution; I/O operations; File-system manipulation; communications and Error detection.
+
+The other set of categories provides functions to ensure the efficient operation of OS itself. Such as:
+* Resource allocation
+* Accounting
+* Protection and security
 
 ### Describe three general methods for passing parameters to the operating system.
+Answer:
+* Pass parameters in registers
+* Registers pass starting address of blocks of parameters
+* Parameters can be placed or pushed onto the stack by the program, and popped off the stack by the OS.
 
 ### Describe how you could obtain a statistical profile of the amount of time spent by a program executing different sections of its code. Discuss the importance of obtaining such a statistical profile.
+Answer: You could inject timers into the program at different sections. A statistical profile of which pieces of code were active should be consistent with the time spent by the program in different sections of its code. This profile could help the programer to identify the bottlenecks and optimize the program.
 
 ### What are the five major activities of an operating system with regard to file management?
 
