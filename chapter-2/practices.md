@@ -37,5 +37,6 @@ Answer: Compare to Mach or MicroKernel, monolithic structure can provide a disti
 ### List five services provided by an operating system, and explain how each creates convenience for users. In which cases would it be impossible for user-level programs to provide these services? Explain your answer.
 
 ### Why do some systems store the operating system in firmware, while others store it on disk?
+Answer: Some OS/kernel is small enough to fit in firmware, such as cellphone or gaming machines. The OS is simplely to support the hardware, and rugged operations.
 
 ### How could a system be designed to allow a choice of operating systems from which to boot? What would the bootstrap program need to do?
