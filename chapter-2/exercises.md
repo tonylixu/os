@@ -17,14 +17,26 @@ Answer:
 Answer: You could inject timers into the program at different sections. A statistical profile of which pieces of code were active should be consistent with the time spent by the program in different sections of its code. This profile could help the programer to identify the bottlenecks and optimize the program.
 
 ### What are the five major activities of an operating system with regard to file management?
+Answer:
+* Create
+* Delete
+* Change ownership and mode
+* Copy files
+* Backup files
 
 ### What are the advantages and disadvantages of using the same systemcall interface for manipulating both files and devices?
+Answer: It will be easy to add a new device driver by implementing the hardware-specific code to support this abstract file interface. The disadvantage with using the same interface is that it might be difficult to capture the functionality of certain devices within the context of the file access API, thereby resulting in either a loss of functionality or a loss of performance. 
 
 ### Would it be possible for the user to develop a new command interpreter using the system-call interface provided by the operating system?
+Answer: Totally, the command line interpreter allows an user to create and manage processes and also determine ways of communication. All of these required functionalities are accessable by user level program using system calls.
 
 ### What are the two models of interprocess communication? What are the strengths and weaknesses of the two approaches?
+Answer:
+* MPI (Message passing Interface):  program structures better separated, dangerous operations firewalled. Not very efficient for large data.
+* Shared memory: fast and direct. Shared memory, secruity!
 
 ### Why is the separation of mechanism and policy desirable?
+* The separation is needed to ensure that systems are easy to modify. With mechanism and policy separate, the policy may be changed at will while the mechanism stays unchanged. This arrangement provides a more flexible system.
 
 ### It is sometimes difficult to achieve a layered approach if two components of the operating system are dependent on each other. Identify a scenario in which it is unclear how to layer two system components that require tight coupling of their functionalities.
 
