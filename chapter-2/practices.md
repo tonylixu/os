@@ -35,8 +35,15 @@ Answer: Layered approach break OS into small pieces that are smaller and more ap
 Answer: Compare to Mach or MicroKernel, monolithic structure can provide a distinct performance advantage, but it is difficult to implement and maintain.
 
 ### List five services provided by an operating system, and explain how each creates convenience for users. In which cases would it be impossible for user-level programs to provide these services? Explain your answer.
+Answer:
+* Program execution: Load user programs into memory for execution.
+* I/O operations: Disks, tapes, serial lines must be communicated with at a very low level. From a user perspective, he only needs to specify the device and operations, the OS will convert it into low level system calls.
+* File System manipulation: Create files, folders.
+* Communication: Messaging passing.
+* Error detection.
 
 ### Why do some systems store the operating system in firmware, while others store it on disk?
 Answer: Some OS/kernel is small enough to fit in firmware, such as cellphone or gaming machines. The OS is simplely to support the hardware, and rugged operations.
 
 ### How could a system be designed to allow a choice of operating systems from which to boot? What would the bootstrap program need to do?
+Answer: During a system booting time, the special boot program (boot loader or boot manager) will determine which OS to boot. Rather than directly boot to a OS, the boot manager will first run during system startup. The boot manager wmust be stored at certain locations of the hard disk to be recogonized during system startup.
