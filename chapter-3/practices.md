@@ -13,3 +13,5 @@ int main()
     return 0;
 }
 ```
+
+### Original versions of Apple’s mobile iOS operating system provided nomeans of concurrent processing. Discuss three major complications that concurrent processing adds to an operating system.
