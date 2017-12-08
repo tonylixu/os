@@ -19,6 +19,6 @@ void simple_exit(void)
 module_init(simple_init);
 module_exit(simple_exit);
 
-MODULE LICENSE("GPL");
-MODULE DESCRIPTION("Simple Module");
-MODULE AUTHOR("TONY");
+MODULE_LICENSE("GPL");
+MODULE_DESCRIPTION("Simple Module");
+MODULE_AUTHOR("TONY");
